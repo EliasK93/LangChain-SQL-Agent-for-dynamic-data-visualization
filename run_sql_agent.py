@@ -18,12 +18,12 @@ def load_and_clean_eurostat_df(dataset: dict[str: str | dict]) -> pd.DataFrame:
     understand for the LLM. The formatted DataFrames have one row per country and year and one column for each unique
     category, for example:
 
-        country (ISO-639-1)	year	daily smoker	non-smoker	occasional smoker
+        country (ISO-639-1) year    daily smoker    non-smoker  occasional smoker
         ...                 ...     ...             ...         ...
-        IS                  2014    11,2	        81,9	    6,9
-        IS                  2019    NaN		        NaN         NaN
-        IT                  2014    17,6	        77,5	    4,9
-        IT                  2019    17,3	        77,6	    5,1
+        IS                  2014    11,2            81,9        6,9
+        IS                  2019    NaN             NaN         NaN
+        IT                  2014    17,6            77,5        4,9
+        IT                  2019    17,3            77,6        5,1
         ...                 ...     ...             ...         ...
     """
 
